@@ -1,17 +1,22 @@
----
-page_type: sample
-languages:
-- php
-products:
-- azure
-description: "This sample demonstrates a tiny Hello World PHP app for App Service."
-urlFragment: php-docs-hello-world
----
+# Azure App Service Deployment Test (PHP)
 
-# PHP Hello World
+This is a simple PHP web application used to test deployment on **Azure App Service**.
 
-This sample demonstrates a tiny Hello World PHP app for [App Service](https://docs.microsoft.com/azure/app-service).
+## Purpose
 
-## Contributing
+The app displays the **IP address** of the machine where it is running. It is designed to verify that the deployment works correctly in Azure and can be used to test load balancing, scaling, or infrastructure setup.
 
-This project has adopted the [Microsoft Open Source Code of Conduct](https://opensource.microsoft.com/codeofconduct/). For more information see the [Code of Conduct FAQ](https://opensource.microsoft.com/codeofconduct/faq/) or contact [opencode@microsoft.com](mailto:opencode@microsoft.com) with any additional questions or comments.
+## What It Does
+
+- Shows the server's IP address in the browser
+- Helps confirm that the app is running on Azure App Service
+- Useful for testing deployment and infrastructure behavior
+
+## How to Deploy (Basic Steps)
+
+1. Create an Azure App Service (Linux, PHP runtime).
+2. Deploy this code using GitHub integration, ZIP deployment, or FTP.
+3. Visit the app URL to see the IP address displayed.
+
+## Example Output
+Your IP address is: 20.155.34.89
